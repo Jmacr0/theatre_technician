@@ -1,0 +1,26 @@
+nav {
+    border-bottom: 4px solid #003d03;
+}
+
+#index {
+    color: #111111;
+    background-color: #ffffffce;
+    border-right: 2px solid #525252;
+}
+
+#main {
+    color: #111111;
+    background-color: #ffffffa8;
+}
+
+.row {
+    height: 91vh;
+}
+
+.jumbotron {
+    min-height: 100vh;
+}
+
+#index button {
+    border-radius: 0;
+}
