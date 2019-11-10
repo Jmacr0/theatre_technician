@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Theatre Technician</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Theatre Technicians</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active my-auto" href="#about">About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link my-auto ml-4" href="#" id="education">Education</a>
+                <a class="nav-item nav-link my-auto ml-4" href="#" id="shop"><button class="btn btn-success">Shop</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid p-0 m-0">
+        <div class="container-fluid h-100 p-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <h1>Theatre Technicians Australia</h1>
+                    <p>Welcome to the all in one resource for theatre technicians, Australia. Lorem ipsum
+                        dolor sit, amet
+                        consectetur adipisicing elit. Nulla architecto itaque perspiciatis officiis consequuntur ex
+                        totam
+                        deserunt provident. Magnam eum neque deleniti esse molestiae, repellat reprehenderit impedit?
+                        Nisi,
+                        autem ipsum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <img src="./images/OR.jpg" alt="operating-room" class="w-100 rounded mb-5">
+                    <p>Welcome to the all in one resource for theatre technicians, Australia. Lorem ipsum
+                        dolor sit, amet
+                        consectetur adipisicing elit. Nulla architecto itaque perspiciatis officiis consequuntur ex
+                        totam
+                        deserunt provident. Magnam eum neque deleniti esse molestiae, repellat reprehenderit impedit?
+                        Nisi,
+                        autem ipsum.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row blocks">
+            <div class="col-md-10 mx-auto">
+                <h2 class="text-center" id="about">Who are we?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla doloribus culpa earum qui est! Ullam
+                    quaerat, tempore iste autem, dolore pariatur unde molestias expedita nihil id quod atque molestiae
+                    voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eligendi soluta odit
+                    incidunt sequi eius est consectetur labore pariatur minima, ipsum ut ea sed eos beatae dolore ipsam
+                    at ad?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script>
+        console.log($(document).scrollTop());
+        $(document).scroll(function () {
+            var nav = $('nav');
+            if ($(document).scrollTop() > 300) {
+                nav.removeClass('navbar-dark');
+                nav.addClass('navbar-light');
+                nav.attr('style', 'background-color: #eeeeee;');
+                
+            } else {
+                nav.addClass('navbar-dark');
+                nav.attr('style', 'background-color:;');
+            }
+            })
+        
+           
+    </script>
+</body>
+
+</html>
